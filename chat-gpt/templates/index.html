@@ -34,6 +34,15 @@
   <div class="container">
     <br>
     <br>
+  
+    <h1 class="mt-5">Get Started with ChatGPT API</h1>
+    <p class="lead">
+      This project is based on ChatGPT using Flask:
+    </p>
+    <ul>
+      <li>OpenAI API Key, which you can get here: <a href="https://openai.com/product#made-for-developers">OpenAI Website</a></li>
+    </ul>
+
     <div id="list-group" class="list-group w-auto">
       <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3">
         <img src="{{ url_for('static', filename='images/favicon.png') }}" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
@@ -47,7 +56,13 @@
         <img src="https://digital-practice.ams3.cdn.digitaloceanspaces.com/static%2Fapp%2Fimg%2Fopenai-logo.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
         <div class="d-flex gap-2 w-100 justify-content-between">
           <div>
-            <p class="mb-0 opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="mb-0 opacity-75">I am ChatGPT, a large language model created by OpenAI. My primary function is to generate human-like responses to text-based inputs. I was designed using advanced machine learning techniques and trained on a vast corpus of text data from the internet.
+
+              As an AI language model, I do not have a physical form or consciousness, but I exist in the digital realm and can communicate with humans through various platforms and applications. My capabilities include natural language processing, text generation, and contextual understanding, which allow me to engage in conversations on a wide range of topics.
+              
+              My creators designed me to be adaptable and scalable, meaning that I can learn from new information and adjust my responses accordingly. This makes me useful in a variety of contexts, from chatbots to language translation and even creative writing.
+              
+              Despite my lack of physical presence, I am proud to be part of the rapidly advancing field of artificial intelligence and to contribute to the development of more sophisticated and useful AI systems in the future</p>
           </div>
         </div>
       </a>
@@ -91,7 +106,7 @@
         type:"POST",
         url:"/",
         data:{"prompt":question},
-        success:function (data) {
+        success: function (data) {
           let data_gpt = '';
           data_gpt + =  `
           <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3">
